@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Faculdade de Análise de Sistemas></title>
+	<link rel="stylesheet" type="text/css" href="styli.css">
+	<h1>
+		Gerenciamento de Banco de Dados
+	</h1>
+		 
+</head>
+<body>
+	<nav> 
+	     <ul> 
+	        <li>
+	         <a href="painel_de_controle.html">Home</a>
+	         </li> 
+	     </ul> 
+	</nav>
+	<p>
+		<h3>1. Considere a tabela “alunos” com a seguinte estrutura:
+
+CREATE TABLE alunos (<br>
+
+                Id_aluno INT PRIMARY KEY,<br>
+
+                nome-aluno VARCHAR(255),<br>
+
+                data_nascimento DATE,<br>
+
+                cidade_natal VARCHAR(100)<br>
+
+				);<br>
+
+				Suponha que você deseja encontrar a idade média dos alunos na cidade de São Paulo. Qual consulta SQL você usaria?<br>
+						</h3>
+
+				R. SELECT AVG(YEAR(NOW()) – YEAR(data_nascimento) FROM alunos WHERE cidade_natal = ‘São Paulo’;<br><br>
+
+ 		
+
+  		<h3> 2.Considere a tabela “disciplina” com a seguinte estrutura:<br></h3>
+
+				CREATE TABLE disciplina (<br><br>
+
+                Id_disciplina INT PRIMARY KEY,<br>
+
+                Nome_disciplina VARCHAR(255)<br>
+
+				);<br>
+
+				Suponha que você deseja listar todas as disciplinas cujo nome começa com a letra “C”. Qual a consulta SQL você usaria?<br>
+
+		R. SELECT * FROM disciplina WHERE nome_disciplina LIKE “C%”<br>
+
+ 
+
+   		<h3>	3. Suponha que você deseja calcular a média das notas dos alunos que nasceram em São Paulo usando a tabela “alunos”. Qual consulta SQL você usaria para isso</h3><br><br>
+
+R. SELEC AVG(nota) FROM notas WHERE id_aluno IN (SELECT id_aluno FROM alunos WHERE cidade_natal = ‘São Paulo’):<br>
+
+ 
+
+   4. Qual é o principal objetivo de criar uma view em SQL?<br><br>
+
+R. Simplificar consultas complexas, ocultando detalhes da estrutura da tabela.<br>
+
+ 
+
+   5. Considere a tabela “alunos” com a seguinte estrutura:<br><br>
+
+CREATE TABLE alunos (<br>
+
+                Id_aluno VARCHAR(255),<br>
+
+data_nascimento DATE,<br>
+
+                Cidade_natal VARCHAR(100)<br>
+
+);<br>
+
+Qual consulta SQL retorna o nome de todos os alunos que nasceram em São Paulo?<br>
+
+R. SELECT nome_aluno FROM alunos WHERE cidade_natal = ‘São Paulo’;<br>
+
+ 
+
+   6. Suponha que você deseja criar uma trigger que insira automaticamente uma nota 0 para um aluno sempre que um registro é excluído da tabela “notas”. Considere a seguinte descrição da tabela “notas”:<br><br>
+
+CREATE TABLE notas(<br>
+
+                Id_notas INT PRIMARY KEY<br>
+
+                Id_aluno INT,<br>
+
+                Id_disciplina INT,<br>
+
+                nota FLOAT<br>
+
+);<br>
+
+Qual ação da trigger você deve usar?<br>
+
+R. AFTER INSERT<br>
+
+​
+
+    7. Qual a principal diferença entre uma função e uma procedure em SQL?<br><br>
+
+R. Funções podem retornar valores, enquanto procedures não podem.<br>
+
+ 
+
+   8.Considere a tabela “disciplina” com a seguinte estrutura:<br><br>
+
+CREATE TABLE disciplina (<br>
+
+                Id_disciplina INT PRIMARY KEY,<br>
+
+                nome_disciplina VARCHAR(255)<br>
+
+):<br>
+
+Qual consulta SQL retorna o nome de todas as disciplinas?<br>
+
+R. SELECT nome_disciplina FROM disciplina;<br>
+	</p>
+
+</body>
+</html>

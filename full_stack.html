@@ -1,0 +1,123 @@
+<html> 
+    <head> 
+        <title>Faculdade Análise de Sistemas</title> 
+        <link rel="stylesheet" type="text/css" href="styli.css">
+    </head> 
+    <body> 
+        <nav> 
+                <ul> 
+                    <li>
+                        <a href="painel_de_controle.html">Home</a>
+                    </li> 
+                </ul> 
+        </nav> 
+
+
+        <h1>Full Stack</h1> 
+                
+        <p>
+           <h3>1. Um dos desafios emocionantes do desenvolvimento full stack é a integração eficaz entre o front-end e o back-end.Qual é uma das estratégias comuns para fazer com que essas partes funcionem juntas?</h3>
+                 R. Uso de interferências HTTP, manipulação de respostas e atualizações em tempo real, se aplicável.<br><br>
+
+                 
+
+            <h3>2. Após a implementação completa, entra-se na fase de testes, depuração e otimização.
+
+            Qual é a importância da fase de testes em uma aplicação web?<br></h3>
+
+            R. A fase de testes verifica a funcionalidade da aplicação e identifica erros.<br>
+
+ 
+
+            <h3>3. Após concluir a implementação e os testes da aplicação, o próximo passo é impantá-la para que os usuários finais possam acessá-la.
+
+            Qual das seguintes afirmações é verdadeira sobre a implantação e hospedagem de uma aplicação web?<br></h3>
+
+            R. A Hospedagem envolve configurar um ambiente de produção onde a aplicação é realizada e pode ser acessada por usuários reais.<br>
+
+             
+
+            <h3>4. Durante a implementação de recursos avançados no front-end de uma aplicação web, quais dos seguintes elementos podem ser incluídos para fornecer uma experiência de alta qualidade aos usuários?<br></h3>
+
+            R. Autenticação de usuários, formulários dinâmicos e integração com APIs de terceiros.<br>
+
+             
+
+            <h3>5. Na fase de desenvolvimento do back-end para uma aplicação web, qual é uma das principais responsabilidades?<br></h3>
+
+            R. A implementação da lógica de negócios.<br>
+
+             
+
+            <h3>6. Qual das seguintes estratégias é essencial para garantir a integração eficiente entre o front-end e o back-end de uma aplicação web?<br></h3>
+
+            R. Garantir que todas as partes sejam comunicadas por meio de APIs ou endpoints e manipular interfaces e respostas de forma de contato.<br>
+
+             
+
+            <h3>7. Qual o propósito da fase de depuração durante o desenvolvimento de uma aplicação web?<br></h3>
+
+            R. identificar e corrigir erros no código e no funcionamento da aplicação.<br>
+
+             
+
+            <h3>8. Durante a implantação e hospedagem de uma aplicação web, quais são algumas das considerações importantes para garantir alta disponibilidade?<br></h3>
+
+            R. Usar vários servidores para equilibrar a carga e evitar pontos únicos de falha.<br>
+
+            <p>Prova Integradora</p>
+
+             
+
+            <p><strong>ENADE 2008</strong></p>
+
+            Com relação aos conceitos de orientação a objetos, julgue os seguintes itens.<br>
+
+            I. As variáveis ​​ou métodos declarados com modificação de acesso privado só são acessíveis aos métodos da classe em que são declarados.<br>
+
+            II. Uma classe deve possuir uma única declaração do método construtor.<br>
+
+            III. Uma instância de uma classe abstrata herdada de atributos e métodos de sua superclasse direta.<br>
+
+            4. O polimorfismo permite substituir a lógica condicional múltipla (lógica switch ou faça caso)<br>
+
+            São certos apenas os itens: <br><br>
+
+            R. I e IV (respondido Willian) errada<br>
+
+            R. II e III (acho correto) errado
+            ?<br>
+
+             
+
+            <p><strong>ENADE 2008</strong></p><br><br>
+
+            Após realizar uma análise de mercado em busca de soluções para aprimorar seu negócio, uma empresa adquiriu um sistema ERP (enterprise resource Planning) contendo um conjunto de módulos que integra todos os departamentos existentes. Após um ano de utilização, houve uma mudança na legislação e, para atender às novas exigências, foi necessária uma manutenção no sistema ERP.<br>
+
+            R. Adaptativa<br>
+
+ 
+
+ENADE 2011<br>
+
+Em um modelo de dados que descreve a publicação acadêmica de pesquisadores de diferentes instituições em eventos acadêmicos, considere as tabelas abaixo.<br>
+
+DEPARTAMENTO (#CodDepartamento, NomeDepartamento)<br>
+
+EMPREGADO (#CodEmpregado, NomeEmpregado, CodDepartamento, Salario)<br>
+
+Na linguagem SQL, o comando mais simples para recuperar os códigos dos departamentos cuja média salarial seja maior que 2000 é:<br>
+
+R. SELECIONE CodDepartamento DO GRUPO EMPREGADO POR CodDepartamento TENDO AVG (Salário) > 2000<br><br>
+
+ 
+
+ENADE 2005<br>
+
+Considere Considere o seguinte script SQL de criação de um banco de dados. CRIAR TABELA PECAS ( CODIGO NUMERIC(5) NOT NULL, DESCRICAO VARCHAR(20) NOT NULL, ESTOQUE NUMERIC(5) NOT NULL, PRIMARY KEY(CODIGO)); CRIAR TABELA FORNECEDORES (COD_FORN NUMERIC(3) NOT NULL, NOME VARCHAR(30) NOT NULL, PRIMARY KEY(COD_FORN) ); CREATE TABLE FORNECIMENTOS ( COD_PECA NUMERIC(5) NOT NULL, COD_FORN NUMERIC(3) NOT NULL, QUANTIDADE NUMERIC(4) NOT NULL, PRIMARY KEY(COD_PECA, COD_FORN), FOREIGN KEY (COD_PECA) REFERENCES PECAS, FOREIGN KEY (COD_FORN) REFERENCES FORNECEDORES); A partir desse script, assinale a opção CORRETA que apresenta o comando SQL que permite obter uma lista que contém o nome de cada fornecedor que forneceu alguma peça, o código da peça fornecida, a descrição dessa peça e a quantidade fornecida da referida peça.
+
+R. SELECIONE NOME, CODIGO, DESCRICAO, QUANTIDADE DE PECAS, FORNECEDORES, FORNECIMENTOS ONDE PECAS.CODIGO = FORNECIMENTOS.COD_PECA E FORNECEDORES.COD_FORN = FORNECIMENTOS.COD_FORN;
+        
+        </p>    
+    </body> 
+</html>

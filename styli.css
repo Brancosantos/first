@@ -1,0 +1,76 @@
+/* Estilos base */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 40;
+    padding: 20;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Cabeçalho com efeito Y2K */
+header {
+    background-color: #0047ab;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 5px solid #ffc107;
+}
+
+/* Navegação UX-Focused */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo principal com gradientes vibrantes */
+main {
+    padding: 20px;
+    color: #800;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+}
+
+/* Rodapé */
+footer {
+    background-color: #0047ab;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botões com estilo moderno */
+button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
